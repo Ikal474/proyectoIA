@@ -10,7 +10,7 @@ from tensorflow.keras.applications.efficientnet import preprocess_input
 
 @st.cache_resource
 def load_model():
-    ruta = r"C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA\mi_modelo.keras"
+    ruta = "mi_modelo.keras"
     model = tf.keras.models.load_model(ruta)
     return model
 
@@ -61,3 +61,4 @@ if uploaded_file is not None:
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
